@@ -1,0 +1,193 @@
+.container {
+    background-color: #ffffff;
+    place-items: center;
+    position: relative;
+    max-width: 500px;
+    margin: 10% auto;
+    text-align: center;
+    padding: 40px;
+    /* border-radius: 10px; */
+    z-index: 9;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.432);
+}
+
+
+.container::before {
+    position: absolute;
+    content: '';
+    width: 50%;
+    height: 250%;
+    left: 50%;
+    z-index: -99;
+    top: -50%;
+    translate: -50% -10%;
+    background: rgba(0, 23, 85, 0.911);
+    animation: animate2 15s linear infinite;
+
+}
+
+@keyframes animate2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+.container::after {
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background: linear-gradient(rgb(0, 21, 41), rgb(0, 46, 99), rgb(0, 36, 83));
+    inset: 3px;
+    width: 99%;
+    /* border-radius: 8px; */
+}
+
+.container span {
+    color: #07da00;
+    display: block;
+}
+
+.container h1 {
+    margin-bottom: 15%;
+}
+
+@media screen AND (max-width:900px) {
+
+    .container {
+        max-width: 400px;
+        margin: 30% auto;
+    }
+}
+
+
+
+label {
+    display: block;
+    margin-top: 10px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    margin: 10px;
+}
+
+input {
+    padding-left: 5px;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border: 1px solid;
+    outline: none;
+    box-shadow: 0 3px 10px black;
+}
+
+.selection {
+    display: flex;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 2px solid white;
+    transition: 300ms ease;
+    cursor: pointer;
+    margin-top: 5%;
+    box-shadow: 0 3px 10px black;
+}
+
+
+button:hover {
+    color: white;
+    background-color: transparent;
+}
+
+h1,
+h2,
+h3,
+p,
+label {
+    text-shadow: 0 3px 10px black;
+}
+
+#canvas5 {
+    position: fixed;
+    inset: 0;
+    /* background: radial-gradient(rgb(2, 63, 0)0%, hsl(108, 100%, 5%) 100%); */
+    background: hsl(108, 100%, 1%);
+    filter: blur(3px);
+}
+
+#avatarButton {
+    border: 1px solid lime;
+    border-radius: 50%;
+    position: relative;
+    left: 75%;
+    width: 2.75rem;
+    height: 2.75rem;
+    cursor: pointer;
+}
+
+.userDropdown {
+    height: 50vh;
+}
+
+.user-dropdown-email {
+    padding: 10px 0px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+#user-email {
+    padding-left: 5px;
+}
+
+.user-nav-dropdown {
+    padding: 10px;
+    font-weight: normal;
+
+}
+
+.user-signout {
+    padding: 15px;
+}
+
+#signout {
+
+    margin-bottom: 5%;
+}
+
+.user-algo-output {
+    display: none;
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+}

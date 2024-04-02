@@ -1,0 +1,20 @@
+h3,
+h4 {
+    color: rgb(22, 22, 22);
+
+}
+
+p {
+    text-transform: capitalize;
+}
+body{
+    visibility: hidden;
+}
+#sidenavdocs a {
+    color: rgb(27, 27, 27) !important;
+    text-transform: capitalize;
+}
+
+#sidenavdocs a:hover {
+    text-decoration: underline;
+}
