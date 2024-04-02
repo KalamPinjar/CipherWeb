@@ -3,7 +3,9 @@ Cipher Web is a comprehensive web application designed to provide users with a w
 
 ## Features
 
--# 10 Encryption Algorithms**: Includes CAESAR-CIPHER, RSA-CIPHER, MORSE-CIPHER, VERNAM-CIPHER, VIGENÈRE-CIPHER, RAILFENCE-CIPHER, POLYBIUS SQUARE-CIPHER, HUFFMAN-CIPHER, BLOWFISH-CIPHER, and GRONSFELD-CIPHER.
+# 10 Encryption Algorithms: 
+Includes CAESAR-CIPHER, RSA-CIPHER, MORSE-CIPHER, VERNAM-CIPHER, VIGENÈRE-CIPHER, RAILFENCE-CIPHER, POLYBIUS SQUARE-CIPHER, HUFFMAN-CIPHER, BLOWFISH-CIPHER, and GRONSFELD-CIPHER.
+
 - **User-Friendly Interface**: Easy to use interface for both encryption and decryption processes.
 - **Secure Storage**: Stores encrypted data securely in Firebase Cloud Database, ensuring data integrity and security.
 
