@@ -239,7 +239,6 @@ button {
 
 
 
-
 #dropdown-products {
     position: absolute;
     left: 45%;
@@ -257,6 +256,8 @@ button {
     gap: 0.85rem;
 
 }
+
+
 
 #menu-products:hover #dropdown-products {
     display: flex;
