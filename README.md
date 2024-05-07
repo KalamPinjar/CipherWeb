@@ -24,6 +24,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 2. Set up Firebase configuration in `src/firebaseConfig.js` with your Firebase project details.
 
+### Setting up Firebase:
+1. Create a new project on Firebase and note down your Firebase project configuration.
+
+2.Replace the placeholder Firebase configuration in the project wherever it's required with your actual Firebase project configuration. This is typically found in files where Firebase SDK is initialized. (Go through all js and html files)
+
 ### Running the Application
 
 1. Start the development server:
