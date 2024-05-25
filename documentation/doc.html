@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <title>CipherWeb docs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="/images/optimized-img/othersideicon.png" type="image/icon type">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/LandingPage/css/main.css">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <h2 class="logo">
+        <a href="/LandingPage/landing-page.html">
+          <canvas id="canvas1"></canvas>
+
+          <img id="image1"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAO3RFWHRDb21tZW50AHhyOmQ6REFGNkpiVjBVWXc6NixqOjkwOTA5MzE2MjQ3OTY5MzQ2MTgsdDoyNDAxMTcxM/RnnAgAAATeaVRYdFhNTDpjb20uYWRvYmUueG1wAAAAAAA8eDp4bXBtZXRhIHhtbG5zOng9J2Fkb2JlOm5zOm1ldGEvJz4KICAgICAgICA8cmRmOlJERiB4bWxuczpyZGY9J2h0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMnPgoKICAgICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICAgICAgIHhtbG5zOmRjPSdodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyc+CiAgICAgICAgPGRjOnRpdGxlPgogICAgICAgIDxyZGY6QWx0PgogICAgICAgIDxyZGY6bGkgeG1sOmxhbmc9J3gtZGVmYXVsdCc+b3RoZXJzaWRlIC0gMTwvcmRmOmxpPgogICAgICAgIDwvcmRmOkFsdD4KICAgICAgICA8L2RjOnRpdGxlPgogICAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgoKICAgICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICAgICAgIHhtbG5zOkF0dHJpYj0naHR0cDovL25zLmF0dHJpYnV0aW9uLmNvbS9hZHMvMS4wLyc+CiAgICAgICAgPEF0dHJpYjpBZHM+CiAgICAgICAgPHJkZjpTZXE+CiAgICAgICAgPHJkZjpsaSByZGY6cGFyc2VUeXBlPSdSZXNvdXJjZSc+CiAgICAgICAgPEF0dHJpYjpDcmVhdGVkPjIwMjQtMDEtMTc8L0F0dHJpYjpDcmVhdGVkPgogICAgICAgIDxBdHRyaWI6RXh0SWQ+ZGI5MDUzM2ItM2JmMC00M2Y3LWJlOTYtNzIwY2RiNTUxODNjPC9BdHRyaWI6RXh0SWQ+CiAgICAgICAgPEF0dHJpYjpGYklkPjUyNTI2NTkxNDE3OTU4MDwvQXR0cmliOkZiSWQ+CiAgICAgICAgPEF0dHJpYjpUb3VjaFR5cGU+MjwvQXR0cmliOlRvdWNoVHlwZT4KICAgICAgICA8L3JkZjpsaT4KICAgICAgICA8L3JkZjpTZXE+CiAgICAgICAgPC9BdHRyaWI6QWRzPgogICAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgoKICAgICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICAgICAgIHhtbG5zOnBkZj0naHR0cDovL25zLmFkb2JlLmNvbS9wZGYvMS4zLyc+CiAgICAgICAgPHBkZjpBdXRob3I+SGFzaW5hPC9wZGY6QXV0aG9yPgogICAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgoKICAgICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0nJwogICAgICAgIHhtbG5zOnhtcD0naHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyc+CiAgICAgICAgPHhtcDpDcmVhdG9yVG9vbD5DYW52YTwveG1wOkNyZWF0b3JUb29sPgogICAgICAgIDwvcmRmOkRlc2NyaXB0aW9uPgogICAgICAgIAogICAgICAgIDwvcmRmOlJERj4KICAgICAgICA8L3g6eG1wbWV0YT4qKcG3AAAb+UlEQVR4nOzdPYgtdx3G8SdWajBYaKeCYpjCIkXAiCljqUUKHUTEIvhGGhNNJERGM/ElXhWiENSAYKMwIqawDpgihelSBDJciS/4ghg0EKKWFmdBSG6Su3t3ztl99vOBbZY9/9+v+3LOnJm9LgDAuXfdoRcAAK6doANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDgAFBB0ACgg6ABQQdAAoIOgAUEDQAaCAoANAAUEHgAKCDuWmdfxgkvcn+ek8LC8ceh9gG4IOpaZ1vDHJD5PcdvSrF5N8fR6WS4fbCtiKoEOZaR3fkuSBJHe9yp/8Lsnd87D8en9bAVsTdCgyreOnk3wjyduv4s8fT/L5eVgub7sVsA+CDgWmdbw1ySNJbjrByx9OMs3D8uLpbgXsk6DDOTat4zuSfDfJeI1HPZ/k/nlYHr32rYBDEHQ4h6Z1fGOSLx/9vOkUj34myWfnYXnyFM8E9kDQ4ZyZ1vFjSb6T5F0bjvlFki/Ow/LnDWcAp0jQ4ZyY1vF9SX6c5NY9jfxPkktJHpqH5b97mgmckKDDGTet49uy++b6Zw60wp+S3DsPy3Kg+cBVEHQ4w6Z1/EKSryZ566F3SfJkdtfXnzn0IsArCTqcQdM63pbdU95uPPQuV/Bodt+If/7QiwD/J+hwhkzr+J4k30/y4UPv8jpeSPLAPCwPH3oRYEfQ4QyY1vH67D5av+fQuxzT5eyeNvf4oReBi07Q4cCmdbwjybdydY9rPYl/JPlNko9udH6SPJbkS/OwPLfhDOA1CDocyLSOt2R3G9pJHtd6tb6d5MF5WF6a1vHmo3k3bzjvUpJ5HpaXNpwBXIGgw55N6/jO7EL78Q3HvOo75mkdP5Xdg2m2+kTg79l9ae4nG50PXIGgw55M63hDkq9k2+vkzyb53DwsT7zOLtcnmZLcu+EuT2d3m9tvN5wBHBF02JNpHe9L8s2Njv9Xkq/Nw/KD47xoT9+q/1mSe+Zh+duGM+DCe8OhFwCu2Y+SvPe4MU+SeViem4flI0k+lN031rfwiSSXp3W8f6PzgXiHDnuzwTv0U39y27SOd2d3+9wNp3Xmy/w+u2v7v9rofLiwBB325BSD/ofsPsL+5Smc9QpHz45/KMkdW5x/5InsrvU/u+EMuFAEHfbkFIL+7+z+89mDp7TSa5rW8absbnO7ZcMxjySZ5mH554Yz4EJwDR3Oh59nd518LzFPknlYnp6H5QNJPpnkrxuNuTO76+t3bnQ+XBjeocOenPAd+pm49Wtaxzdnd8vdfRuOuapb7oArE3Q4gWkdb0/yl3lYnjrGa44b9KfmYdny4+5jm9bx3Um+l+T2Dcc8luSueVj+uOEMqPM/AAAA///s3WvQJUV9x/HvJFaCKKCgeAFFQRwoVEwwZZK1ggkao8YLirbGW5RERJQYFFQuDZkVRe6CgBrvQWQCKl7QqihJTMCAioFEI81NjJJ4ARXihaTUyYsZ2OXhObvnnGf6nOfM8/1U7YudM9P/3mcLfnu6p7sdcpcmEFN4dEzhYuCjwAMyl7s1c/sTq8r6G1VZPwt4PO036hz2BW6IKRzbjQxIGoOBLo0hpvCgmMLZwL8C6+bdn3mryvrzVVnvDryG9ijVHA4Hro4pvCBT+9KgGOjSJsQUto4pHA/8J+0GKRubdMoq9/3LiilsH1N4bh9tLVWV9duAXWjfhs9hB+DsmMIXurfuJY1goEsjxBT+Arie0XuvNxM2mfv+u4gpvB64FqhjCl/uTnjrVVXWP6jK+hXAI2g3u8nhd4ArYgrvjSlsn6mGtNAMdGmJmMJ+MYVrgFOB7ebdn2nEFJ4eU7iWdoOYrbrLewGXxhTOjin0Pv9flfXXqrJ+HO0pct/qu/3OS2mXueU84EZaSAa61Ikp/EZM4UvAecDD5t2facQUdosp/CPwcdqh8OXcvrf6kTn6UJX1ucBuwHrgtgwltgaOjylcHVPIeaiMtFAMdGmDc4HHzLsT04gpbBNTeBvwdWDvMR65B7A+pvCNmMJ+ffenKuufVmUdaYP9I32339kV+GSmtqWFY6BLCy6m8ArgOuDgKR5/CHBeTOHimMIevXYMqMr6m1VZ70feZW6SgLvNuwOSphNTWEf7dnkfQbwO+GpM4Z3AkVVZ39RDm3fodn/bvdvitQK27bN9SX5DlxZOTGGnmMJ5wMX0E+YbO4B2fv0ve24XgKqsz6AdKj8zR/vSWmagSwsiprBlTGE97dB17/PeG7kXcHL30tk+fTfeLXM7iLzL3KQ1x0CXFkBM4U+ARHtAyhYzKrsr8LmYwoUxhV37bnyjZW7PAdy3XVohA11axWIKe8YULgU+BOw4p248hXYL1pNiCltt9u4JVWV9Pu3b8EfTnvkuaQoGurTBJDuzXQB8KVdHOr8NXAGslhPXDgGu796q71VV1rdVZV0BriuXpuRb7tIG4+ydfgXwqqqsZzH3e88Z1JjUfYCzYgqvoj2nve+fw6o7YU5aFAa6NJ5vAkdUZf2heXdkldgDuLh72/6Qqqy/Pe8OSWudgS5tsNyQ+y3Am6qyPnHWnenZfwEPzNDuc4DndG/fH1eV9UrnwHs5YU5ai5xDlzZYGiZvAx664GF+CfDoqqx3AA4j35D2UUDq4ezyFZ8wJ61VBrp0V+fTBvlrqrL+4bw7M6Xrgf2qsn5cVdZXAlRlfQLtUrT3Zaq5I+3Z5ZfGFPbKVEPSCA65Sxt8EXhJVdaXZmp/Ft8+bwHWV2V90nIfVmX9PeBlMYUzgNOA383Qh8cCX44pvA84vCrr70zwrEPu0pQMdKlTlfWLMpfIHVZnAXGcfdirsr4cWNcNkb8V2CFDf34N+OWEzzjkLk3JQJcW30W0S+kmPs2sKusPxRQ+BhwBHN5Tf74G7F+V9WU9tSdpDAa6tLi+Dry2KuvPrKSR7s30I2IK7wJOAfadsqkfAUdVZf32lfRH0nQMdGnx3Awc3Z1c1puqrL8JPCumsDfwDtrtWMf1HuCwqqx/0GefJI3PQJcWy8lAVZX1LbkKTHh2+ZW0w+uX5+qPpPEY6NJiuIB2eP36WRWsyvqMmMKHgfXAK5d8fBPwxqqs3z2r/kjaNANdWt2uBP6i+9Y8c90Q+kExhdNph+H3Bs6g3QY32yiBpMkZ6NIUYgr7ALdWZZ3zxLUvVmW9Kk5a696gf3xM4cFVWf9nxlKuQ5emZKBLE4gp7AicCjwbeGbmcqvu5LHMYQ6uQ5em5tav0phiCkcCiTbMJWlV8Ru6tBkxhafRfivfed59kaRRDHRphJjCzsC7gH3m3RdJ2hwDXVoiprAl/W6FKknZGejSRmIKzwFOAh40775I0iQMdKnTbaLyvAkemXSJVe77h2At/pmlXviWu7TBb054/6RLrHLfPwRr8c8s9cJAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAl6aX+/S0nWIKD5jwmWxiCtvEFJ6fuYynrUlTMtCl6eU+PW1X4NqYwjExhS0nfLZXMYUDgeuAc2IKV8YUfjdTKU9bk6ZkoEur25bA0cDVMYUXz7p4TGFdTOGrwJnAdt3lRwGXxBTOjincf9Z9krQ8A11aDDsAH4gpfDmmsC53sZjCjjGF84CLgT1G3PYC2n9ovC53fyRtnoEuLZa9gItjCufFFHbqu/GYwpYxhQq4BthvjEe2Ak6IKVwVU/iDvvsjaXwGurSY9gNuiCm8NaawVR8Ndi+8JeAoYIsJHy+Bi2IK58cUHtRHfyRNxkCXFtthtC/OHTBtAzGFPWMKlwLnADuusD/PBq6KKRy5wnYkTchAlzaY9A3rSZdY3Trh/ePaHnhHTOGrMYUnjPtQTOG+MYX3AVcAj+2xP1sC62MK18UU9pzwWZetSVMy0KUNJg2Tif4BUJX1GcAzaOenc9gD+GxM4VMxhV03dWNM4ZCuH3+aqS/fAdZXZX3lhM+5bE2akoEuzVBV1p+oyvrhwCHAjzKVeSrt2+enxRS23fiDmMI+MYWrgZOAbTLVfyvwsKqs35+pfUnLuNu8OyCtRVVZnxJT+ACwHnhlpjKvBl4YU1gPXAicTBv2uVwAvLYq6+sz1pA0goEuzUlV1j8ADoopnA68HdgnQ5l70wb5yRnavt1VwCuqsv58xhqSNsNAl+asKuurgCfEFJ5COxS+25y7NK6bgaO7dwMkzZlz6NIqUZX1p6uy3h04GPjBvPuzGacDuxjm0uphoEvT63Op1x2qsj4d2Bk4NUf7K/Q5YPeqrA+uyvqWDO0/LkOb0prgmk+pE1NIwMMnfOxK4KCqrC/J0CW65WenkPdltnFcS/vC2ydyNB5T2A14B7D3pM9WZe3/xyQMdOkOUwb67f6WNvC+3WOX7hBT2If2xblZz6/fCrypKusTcjQeU9gGOBY4aNo2DHSp5ZC71I/nAtfEFNbnOLu8KuuLuvn1VwI39d3+CO8Fds0Y5q8ErmcFYS5pAwNd6s8WwJG0m7q8MEeBqqzPop1fPylH+53LgEdXZb1/Vdbf67vxjc5YPwPYdnP3SxqPQ1VSZ4VD7su5jHZ+/fIe27xDTGFn2vXlz+ipyW8Bh1VlfW5P7d1JTGFH2vcBxjmWdWwOuUst/0OQOhkC/XYfBN5QlfV/Z2ibmMLetN9295iyiZ8BxwPHVWV9W28d68QUtgDeCBwK3L3v9g10qeWQu7RBrtPQXgxcF1M4IkfjVVl/virrRwAvB74/4eM18PCqrI/JFObPoz0EJpIhzIGfZmhTWkj+y1bqxBTuCRwDvDZjmRuA11Vl/ZEcjccU7gEcBbx+M7deCRxQlfVlmfqxB/BOYF2O9jsfoJ0i6H2eX1pEBrq0RDc3fQrw9IxlLqEN1K/laDymsBNwInedr/4ucERV1u/JVHdb4M3AATna71xO+7PL8m6CtKgMdGmEHuamx/Eu2oDNshQtprCO9s+wJ3AC7Rnl/5Op1sG0Ixz3ztE+8N+07yJ8MFP70kIz0KXNiCkcQLv5yXaZStwCHJtrvTe0b5hn3vTmdGD3HO13jgXeUpX1TzLWkBaagS6NIaawFe2LXa/LWOZq4JCqrC/MWKM33bD+qcAzM5b5OO3PxDPWpc0w0KUJZFj7vZyLgAOrsr4mY42pdTvhHQEcnrGMZ6xLEzLQpSnMaH79NCBmOtVsKjGFFwBvBXbIVOKHwDFVWZ+WqX1psAx0aQViCi8H1gPbZypxM22on5mp/bHEFPakXYaW5cjYzjtoXxBc7WfBS6uSgS6tUDe/fhTtTmi5zGUIOqZwH+AtwJ9lLJN1CZ+0VhjoUk+6+fUTgX0zlpnZS2Ixhb8Ejga2yVTim7Sb7JyfqX1pTTHQpZ7NaH79eKDKsYyrW4Z2FrBr3213fko7D398ju1mpbXKQJcyiSn8OfAm8s2vfxc4vCrr9/bRWDfCcCrwtD7aG+Fc4NBca+KltcxAlzLq5tePBA7LWGZF+7JPsP/7SmTdO16SgS7NRPft9wTgWRnLTPztN6bwYuA44AGZ+vR92lGEd2dqX1LHQJdmaMne6jmMdbZ5TGEv2mVoe2XqB7Qb8ByTa+94SXdmoEtzEFPYn3Y52H0zlbgReH1V1h9aUnf7ru7LMtUF+CTw2tW60500VAa6NCczmru+DDioKuvLYwqHdvW2ylTrKuBVVVlflKl9SZtgoEtzFlN4CO0yrudmLHMjebdrPaoq6zMytS9pDAa6tErMYH49h7cBR6+m/ealtcpAl1aZbn79WOB+8+7LJnwaeI3z5NLqYaBLq1A3v34k8IZ592UJ58mlVcpAl1axmMJOwEnAs+fclZtph9adJ5dWKQNdWgBznl8/lXY9ufPk0ipmoEsLJKbwMtr59fvPoNynaE92c55cWgAGurRgZjC/7jy5tIAMdGlBdfPrJwL79dTkTbTz5Gf21J6kGTLQpQXX0/z6KcBfOU8uLS4DXRqIKefX3XddGggDXRqQbn79COCNm7nVeXJpYAx0aYA2Mb9+ExCrsj5r9r2SlJOBLg3Ykvl1zyeXBsxAl9aAmMKvV2X9v/Puh6R8DHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwECXJGkADHRJkgbAQJckaQAMdEmSBsBAlyRpAAx0SZIGwEDXQmua5hnArt1v3wfsC9xrxO3nF0VxwxQ1XgZsO8atXymK4u/HbPOlwHbLfHQF8DPgd0Y8+n/Au4qiuG2cOhvV2wJ41YiPLy6K4tJlnnkJcN9l7v9WURT1mHV3B5464uNzgCex/M9hqQuLovj6GPU2+ecEtgEeOeLznwN/XRTFT8boj7TqGOhaWE3THAicDvxqd+mRwCeAh4545FrgiZOGetM0V7PhHw2bcnpRFAeP2ebXgd2W+egs4GbgyE08/hngWZOEetM02wE3jfj4qKIo3rTMM/8OPGKZ+/+5KIrfG7PuC4G/GfHxOuA9LP9zWOpFRVGcPUa9Tf45gZ2Bl26iiYuAZxjqWkS/Mu8OSNNomuYg7hzm43gY8LmmaXbO06uZeTLwse7bqPq1D/DJpmnuOe+OSJMy0LVwmqZ5NXAak4X57XYB/q5pml367dXM/RFwQdM0d593Rwbo9zHUtYDuNu8OSJNomubJwKmM/sfoWdx5vvsJwGOW3LML8DHgUWOW/RLwHeCxwK8t8/l/AdfRDun34Z+A45ZcezHwwCXXngS8Hdi/p7rzsJ47/30dCjw4Y70Lge8uufZc2qH4jT0eeDfwvIx9kXploGvR7MAmRpaKojhh4993c6pLAx3gAeMWLIriBV1b3wHut8wtnyuK4iXjtjdGvc8Cn934WtM0T+Sugc6IawujKIpzNv590zR/RsZAL4riI8BHltR8LHcNdFjwn63WHgNd0mpyILD1Mtf/bdYdkRaNgS5p1SiK4l/m3QdpURnoGroa+I9lrv9s1h1ZzZqmicDTl1zOvRrg1KZpfrzM9dOKorggc21pcAx0DVpRFBfRri3Wpj0E2GvGNX9rxPWPzrQX0kAY6JLWjKZp9geWborz8BG3X5K5O1KvDHRplWma5lDgNUsu32eZW38OnJu/R4OyjnYJ4OacXhTFG3N3RuqTgS6tPluz+SVTvwAOKIriAz3VPAo4ecm1cxi973kf/gC4fJnrP81Yc1N+0dV+/7hb+EqriYGuQWua5hDgj5f56JaiKPaddX968gvg5UVRvLevBouiuBG4ceNrTdP8X1/tj/C/RVHcmrnGKNfQvltxA+2mQNcACXgD8OY59UlaEQNdQ7cb7VaeS406wGO1u/2beW9hvlo0TfNo4MMjPj60KIpP9VDmOOD9wBa0IxKP3+izX6GdT/8xcGIPtaSZMtClzeiOAN2C0XvHb900zW8A3+u+6a7U0cCxIz77ZVEUub85z8uWjD55bdSRuBMpiuJq4GqApmm+Tbt97lKHNk3znqIofthHTWlWPJxFi+YfaIdJl9U0zReaprnx9l/A80fcOsnLZB8HvsLyL6YBPLP7/PUTtDlSURS/LIrithG/BhXmTdP840Z/Vx+bcfnjR1zfnnboXVooBroWSlEU1wF/yOhQvz/tC2W3/1ruxKwzi6J4dZYOalL3Y8Pf1fazLFwUxd8DF4/4+MCmaR40y/5IK2Wga+EURXEN8ETgG1M8fmZRFAf13CUtrlFz5VsBx8ywH9KKGehaSEVRXEv7Tf36CR47yzDXxoqi+DjLL50DeFHTNOMesSvNXTHvDkiSpJUz0CVJGgADXZKkATDQJUkaAANdkqQBMNAlSRoAA12SpAEw0CVJGgADXZKkATDQJUkagP8HAAD//+3VgQwAAADAIH/re3wlkdABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4ABoQPAgNABYEDoADAgdAAYEDoADAgdAAaEDgADQgeAAaEDwIDQAWBA6AAwIHQAGBA6AAwIHQAGhA4AA0IHgAGhA8CA0AFgQOgAMCB0ABgQOgAMCB0ABoQOAANCB4CBAERwOOPSZs71AAAAAElFTkSuQmCC"
+            alt="">
+
+        </a>
+      </h2>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" id="hamburger-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+          <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </label>
+      <img id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start"
+        class="rounded-full w-10 h-10 cursor-pointer ring-[green] ring-2"
+        src="https://media.istockphoto.com/id/1130884625/vector/user-member-vector-icon-for-ui-user-interface-or-profile-face-avatar-app-in-circle-design.jpg?s=612x612&w=0&k=20&c=1ky-gNHiS2iyLsUPQkxAtPBWH1BZt0PKBB1WBtxQJRE="
+        alt="User dropdown">
+<!-- Dropdown menu -->
+<div class="userDropdownShow" id="userDropdown" class="z-10 shadow rounded-lg">
+  <div class="px-4 py-3 text-gray-900 text-sm dark:text-white">
+      <div id="user-email" class="font-medium truncate">User Not Login! </div>
+      <hr color="white">
+  </div>
+  <ul id="userloggedin" class="py-2 text-gray-700 text-sm dark:text-gray-200" aria-labelledby="avatarButton">
+      <li>
+          <a href="/dashboard.html" class="block px-4 py-2">Dashboard</a>
+          <hr color="white">
+      </li>
+      <li>
+          <a href="/history.html" class="block px-4 py-2">History</a>
+          <hr color="white">
+      </li>
+
+  </ul>
+  <div id="signout" class="py-1">
+      <a class="block px-4 py-2 text-gray-700 text-sm">Sign
+          out</a>
+  </div>
+</div>
+      <ul class="links">
+        <li><a href="/LandingPage/landing-page.html">Home</a></li>
+        <li><a href="/About/about.html">About Us</a></li>
+        <li><a href="/Services/services.html">Services</a></li>
+        <li><a href="/MarketPlace/marketplace.html">Marketplace</a></li>
+        <li><a href="/Contact/contact.html">Contact Us</a></li>
+        <li id="menu-products">
+          <a href="#">Products</a>
+          <ul id="dropdown-products">
+            <li><a href="/Cryptography-text-all-files/Caesar cipher.html">Caesar-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/RSA/rsa.html">RSA-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/Morse/morse.html">Morse-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/Vernam.html">Vernam-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/Vigenère cipher.html">Vigenère-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/RailFence Trail.html">RailFence-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/Polybius Square/index.html">Polybius Square-Cipher</a>
+            </li>
+            <li><a href="/Cryptography-text-all-files/Huffman/huffman.html">Huffman-Cipher</a></li>
+            <li><a href="/Cryptography-text-all-files/blowfish/BlowfishCipher.html">Blowfish-Cipher</a>
+            </li>
+            <li><a href="/Cryptography-text-all-files/Gronsfeld/Gronsfeld.html">Gronsfeld-Cipher</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="/documentation/index.html">Docs</a></li>
+        <form action="https://duckduckgo.com/" class="md:w-40 lg:w-66">
+          <span class="relative flex items-center group">
+            <svg aria-hidden="true" viewBox="0 0 20 20"
+              class="group-hover:fill-lime-500 group-focus:fill-lime-500 absolute ml-3 w-4 h-4 fill-lime-400">
+              <path
+                d="M16.293 17.707a1 1 0 0 0 1.414-1.414l-1.414 1.414ZM9 14a5 5 0 0 1-5-5H2a7 7 0 0 0 7 7v-2ZM4 9a5 5 0 0 1 5-5V2a7 7 0 0 0-7 7h2Zm5-5a5 5 0 0 1 5 5h2a7 7 0 0 0-7-7v2Zm8.707 12.293-3.757-3.757-1.414 1.414 3.757 3.757 1.414-1.414ZM14 9a4.98 4.98 0 0 1-1.464 3.536l1.414 1.414A6.98 6.98 0 0 0 16 9h-2Zm-1.464 3.536A4.98 4.98 0 0 1 9 14v2a6.98 6.98 0 0 0 4.95-2.05l-1.414-1.414Z">
+              </path>
+            </svg>
+            <input type="text" name="q" placeholder="Search docs…"
+              class="bg-lime-100 py-2 pr-2 pl-10 border border-lime-100 hover:border-lime-200 focus:border-lime-200 rounded w-full text-lime-800 outline outline-2 outline-offset-2 outline-transparent placeholder-lime-400 focus:outline-lime-600" />
+          </span>
+          <input type="hidden" name="sites" value="spinalcms.com">
+          <input type="submit" value="Search" class="sr-only" />
+        </form>
+
+
+      </ul>
+      <div id="nav-login" class="buttons">
+        <a href="/Login/Form.html" class="login-btn1 signup">Login In</a>
+      </div>
+    </nav>
+
+    <div id="toast-signout"
+      class="flex items-center bg-white dark:bg-gray-800 shadow p-4 rounded-lg w-full max-w-xs text-gray-500 dark:text-gray-400"
+      role="alert">
+  </header>
+
+
+
+
+  <div class="relative px-6 lg:px-8 pt-14 isolate">
+    <div class="-top-40 sm:-top-80 -z-10 absolute inset-x-0 blur-3xl transform-gpu overflow-hidden" aria-hidden="true">
+      <div
+        class="relative left-[calc(50%-11rem)] sm:left-[calc(50%-30rem)] bg-gradient-to-tr from-[#009700] to-[#00aa00] opacity-20 w-[36.125rem] sm:w-[72.1875rem] -translate-x-1/2 aspect-[1155/678] rotate-[30deg]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+
+    </div>
+  </div>
+
+  <main class="relative flex justify-center mx-auto mt-16 sm:px-2 lg:px-8 xl:px-12 max-w-8xl">
+    <label for="navigation"
+      class="bottom-0 left-0 z-50 fixed flex justify-center items-center border-slate-300 lg:hidden bg-white shadow-lg mb-4 ml-4 border rounded-full w-12 h-12 transition duration-200 cursor-pointer ease-in-out active:scale-95">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+      </svg>
+    </label>
+
+
+    <input type="checkbox" name="navigation" id="navigation" class="hidden peer" />
+    <div
+      class="lg:block peer-checked:block lg:relative top-[3.5rem] lg:top-0 left-0 fixed lg:flex-none hidden shadow-xl lg:shadow-none px-4 lg:px-0 h-screen lg:h-auto sidenavbar">
+      <div class="right-0 absolute inset-y-0 bg-[#b3edaf] w-full lg:w-[50vw]"></div>
+
+      <nav id="sidenavdocs" class="top-[4.5rem] sticky pr-8 xl:pr-16 w-64 xl:w-72 text-base lg:text-sm">
+        <ul role="list" class="space-y-8 -ml-0.5 py-7 pl-0.5 h-[calc(100vh-4.5rem)] overflow-y-auto">
+          <li>
+            <h3 class="font-semibold tracking-tight">
+              Getting started
+            </h3>
+
+            <ul role="list" class="space-y-2 mt-3 pl-3">
+              <li>
+                <a href="index.html">
+                  Quick start guide
+                </a>
+              </li>
+
+              <li>
+                <a href="doc.html">
+                  How does Cipher work?
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3 class="font-semibold tracking-tight">
+              Types of Algorithm
+            </h3>
+
+            <ul role="list" class="space-y-2 mt-3 pl-3">
+              <li>
+                <a href="typesofalgo.html" class="">
+                  What are types of Algorithm?
+                </a>
+              </li>
+
+              <li>
+                <a href="doc.html" class="">
+                  How to use Cipher Algorithms
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <h3 class="font-semibold tracking-tight">
+              Encryption/Decryption
+            </h3>
+
+            <ul role="list" class="space-y-2 mt-3 pl-3">
+              <li>
+                <a href="doc.html" class="">
+                  How does it work?
+                </a>
+              </li>
+
+              <li>
+                <a href="overview.html" class="">
+                  overview of Algorithms
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="maindocs" class="flex-auto px-4 xl:px-16 py-10 lg:pr-0 lg:pl-8 min-w-0 max-w-2xl lg:max-w-none">
+      <article class="">
+        <header class="">
+          <p class="font-medium text-base">
+            Getting started
+          </p>
+
+          <h1 class="font-bold text-3xl tracking-tight">
+            How does Cipher work?
+          </h1>
+        </header>
+
+        <p class="mt- text-xl">
+          Need to get started quickly with Cipher? You will learn all the basics in just minutes.
+        </p>
+
+        <div
+          class="mt-8 max-w-none prose-a:font-semibold prose-headings:font-semibold prose-a:underline prose-headings:tracking-tight prose prose-lead prose-slate">
+          <h2>
+            Getting Started with Cipher Algorithms
+          </h2>
+
+          <p>
+            To get started with cipher algorithms, first, familiarize yourself with the different types of ciphers
+            available, such as substitution ciphers (e.g., Caesar, Vigenère) and transposition ciphers (e.g., Rail
+            Fence). Understand their principles and how they transform plaintext into ciphertext.
+          </p>
+
+          <h2 class="mt-2">
+            Next, determine your encryption needs and the level of security required for your data. Different ciphers
+            offer varying levels of security and complexity, so choose one that best suits your requirements.
+          </h2>
+
+          <p class="mb-2 p-3">
+            1.Key Generation: For symmetric-key ciphers, generate a key for both encryption and decryption. For
+            asymmetric-key ciphers like RSA, generate public and private key pairs.
+            <br><br>
+            2.Encryption: Input your plaintext and the encryption key into the chosen cipher algorithm. Execute the
+            encryption process to generate ciphertext.
+            <br><br>
+            3.Decryption: If necessary, input the generated ciphertext and the decryption key into the cipher algorithm
+            to
+            obtain the original plaintext.
+            <br><br>
+            4.Testing and Validation: Test your encryption and decryption processes with sample data to ensure accuracy
+            and security.
+          </p>
+
+          <h2>
+            Remember to keep your encryption keys
+          </h2>
+
+          <p>
+            Remember to keep your encryption keys secure, as they are crucial for encrypting and decrypting your data.
+          </p>
+
+        </div>
+      </article>
+
+      <dl class="flex border-slate-200 mt-6 pt-6 border-t">
+        <div class="mr-auto text-left">
+          <dt class="font-normal text-sm tracking-tight">
+            Previous
+          </dt>
+
+          <dd class="mt-1">
+            <a href="index.html" class="font-semibold text-base hover:underline">
+              Quick start guide
+            </a>
+          </dd>
+        </div>
+
+        <div class="text-right ml-auto">
+          <dt class="font-norma text-sm tracking-tight">
+            Next
+          </dt>
+
+          <dd class="mt-1">
+            <a href="typesofalgo.html" class="font-semibold text-base hover:underline">
+              What Are Types Of Algorithm?
+            </a>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </main>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+  <script type="module" src="/firebase.js"></script>
+
+</body>
+
+</html>
